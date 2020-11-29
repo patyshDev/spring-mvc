@@ -16,8 +16,4 @@ public class CarService {
         int toIndex = count != null && count < cars.size() ? count : cars.size();
         return  cars.subList(0, toIndex);
     }
-
-    public List<Car> getCarsList() {
-        return carsDao.carList();
-    }
 }
